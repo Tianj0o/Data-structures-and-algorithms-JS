@@ -125,15 +125,18 @@ class LinkList {
     }
   }
 }
+module.exports = {
+  Node,
+  LinkList
+}
+// const linklist = new LinkList()
+// linklist.push(1)
+// linklist.push(2)
+// linklist.push(3)
+// linklist.insert(2, 100)
+// linklist.remove(100)
+// linklist.remove(2)
 
-const linklist = new LinkList()
-linklist.push(1)
-linklist.push(2)
-linklist.push(3)
-linklist.insert(2, 100)
-linklist.remove(100)
-linklist.remove(2)
+// linklist.toString()
 
-linklist.toString()
-
-console.log(linklist.indexOf(3));
+// console.log(linklist.indexOf(3));

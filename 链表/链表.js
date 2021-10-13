@@ -101,7 +101,7 @@ class LinkList {
       outPut = outPut + ',' + current.next.element
       current = current.next
     }
-    console.log(outPut)
+    // console.log(outPut)
     return outPut
   }
   size() {

@@ -25,19 +25,21 @@ function fibonacci2(n) {
     return fibonacci2(n - 1) + fibonacci2(n - 2)
   }
 }
-
+let memo
 //记忆化优化递归
 function fibonacciMemoization(n) {
-  let memo = [0, 1]
-  let i = 0
+  memo = [0, 1]
   let fib = (n) => {
     if (memo[n] != null) {
-      console.log(n)
+      // console.log(n)
       return memo[n]
     } else {
-      console.log(n)
-      return fib(n - 1) + fib(n - 2)
+      // console.log(n)
+      return memo[n] = fib(n - 1, memo) + fib(n - 2, memo)
     }
   }
   return fib(n)
 }
+
+console.log(fibonacciMemoization(4))
+console.log(memo)

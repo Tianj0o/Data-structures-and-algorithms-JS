@@ -15,5 +15,7 @@ function insertionSort(arr) {
   return arr
 }
 
-
-console.log(insertionSort(arr));
+module.exports = {
+  insertionSort
+}
+// console.log(insertionSort(arr));

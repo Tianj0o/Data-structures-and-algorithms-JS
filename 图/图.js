@@ -61,18 +61,18 @@ class Graph {
     return this.adjList[v].includes(w)
   }
 }
-const g = new Graph()
-g.addEdge('A', 'B')
-g.addEdge('A', 'C')
-g.addEdge('A', 'D')
-g.addEdge('C', 'D')
-g.addEdge('C', 'G')
-g.addEdge('D', 'G')
-g.addEdge('D', 'H')
-g.addEdge('B', 'E')
-g.addEdge('B', 'F')
-g.addEdge('E', 'I')
-console.log(g.toString());
+// const g = new Graph()
+// g.addEdge('A', 'B')
+// g.addEdge('A', 'C')
+// g.addEdge('A', 'D')
+// g.addEdge('C', 'D')
+// g.addEdge('C', 'G')
+// g.addEdge('D', 'G')
+// g.addEdge('D', 'H')
+// g.addEdge('B', 'E')
+// g.addEdge('B', 'F')
+// g.addEdge('E', 'I')
+// console.log(g.toString());
 
 module.exports = {
   Graph

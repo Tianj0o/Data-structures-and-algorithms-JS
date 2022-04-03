@@ -85,3 +85,12 @@ function initializeColor(vertices) {
 }
 
 // depthFirstSearch(g, printVertex)
+
+module.exports = {
+  depthFirstSearch,
+  breadthFirstSearch,
+  g,
+  initializeColor,
+  Color,
+  printVertex
+}
